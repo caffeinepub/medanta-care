@@ -1,0 +1,37 @@
+{
+  "kind": "build_request",
+  "title": "Update phone number to 8429145707 in footer",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-20",
+      "text": "In the Footer component (frontend/src/components/Footer.tsx), update the contact phone number displayed in the footer contact section to '+91-8429145707'. This corresponds to the element at XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/p[1]. Also update any tel: href link associated with this phone number to 'tel:+918429145707'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "change phone number to 8429145707"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The footer contact section displays '+91-8429145707' as the phone number.",
+        "Any tel: anchor href in the footer is updated to 'tel:+918429145707'.",
+        "No other phone number instances elsewhere in the footer are left as the old number."
+      ]
+    }
+  ],
+  "constraints": [
+    "Only change the phone number in the footer contact section as identified by the provided XPath. Do not alter any other footer content."
+  ],
+  "nonGoals": [
+    "Updating the WhatsApp button wa.me link phone number.",
+    "Updating phone numbers on any page other than the footer.",
+    "Any backend changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

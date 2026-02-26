@@ -1,0 +1,17 @@
+{
+  "frontend/src/App.tsx": "Main app entry with TanStack Router setup, all routes wired, and root layout with Navbar/Footer/floating widgets and profile setup modal. The catalog route's `validateSearch` now uses optional chaining so `search` and `category` default to empty strings without being required.",
+  "frontend/src/components/Navbar.tsx": "Sticky top navigation bar with logo, search (passes both `search` and `category` to catalog route), nav links, cart badge, and authenticated user dropdown with admin link.",
+  "frontend/src/components/CategoryGrid.tsx": "Responsive 20-category grid with hover animations; each card links to `/catalog` with both `search: ''` and `category: cat` search params to satisfy the route's type requirements.",
+  "frontend/src/components/HeroSection.tsx": "Full-width hero banner with headline, subheadline, two CTA buttons (Order Now links to catalog with required search params), and trust badges on navy background.",
+  "frontend/src/pages/HomePage.tsx": "Complete homepage with all 9 sections (Hero, Why Choose, Category Grid, Price Advantage, How It Works, Service Areas, Trust & Compliance, Testimonials); `Award` is now properly imported from lucide-react.",
+  "frontend/src/pages/LoginPage.tsx": "Login page with Internet Identity button, benefit highlights, and already-authenticated redirect; `CheckCircle` is now properly imported from lucide-react.",
+  "frontend/src/pages/ProductDetailPage.tsx": "Individual product detail page with image, description, price, prescription notice, quantity selector, and add-to-cart; all `/catalog` links now include required `search` params.",
+  "frontend/src/pages/CartPage.tsx": "Shopping cart page showing items with quantity controls, subtotal, and order summary; all `/catalog` links now include required `search` and `category` params.",
+  "frontend/src/pages/CheckoutPage.tsx": "Multi-step checkout (address, prescription, payment, confirmation) with all `/catalog` links updated to include required search params.",
+  "frontend/src/pages/CustomerDashboard.tsx": "Customer dashboard with Order History, Saved Addresses, and Prescriptions tabs; `/catalog` link updated with required search params.",
+  "frontend/src/components/admin/BlogFormModal.tsx": "Admin modal for creating and editing blog posts with title, content, category, author, cover image upload with progress, and publish toggle.",
+  "frontend/src/pages/BlogListingPage.tsx": "Public blog listing page showing published posts in a grid with category filter tabs; fetches from backend and shows loading skeletons.",
+  "frontend/src/pages/BlogPostPage.tsx": "Individual blog post page with cover image, metadata, full content, and social share buttons for Facebook and WhatsApp.",
+  "frontend/src/pages/StaticPage.tsx": "Reusable static content page component for About, Contact, Terms, Privacy, Refund, and Shipping pages with pre-written content sections.",
+  "frontend/src/components/Footer.tsx": "Footer component with brand info, quick links, legal links, and contact section; phone number updated to +91-8429145707 with a clickable tel: link (tel:+918429145707)."
+}

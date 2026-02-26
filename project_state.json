@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "MEDANTA CARE — a full-stack premium e-pharmacy platform for Varanasi with rapid 30–60 minute medicine delivery. Features role-based auth (admin/customer), 20 medicine categories, order management with prescription uploads, order tracking, user profiles, blog system, scripted FAQ chatbot, floating WhatsApp button, and a premium homepage with Deep Navy/Orange/Purple brand identity. Payment UI placeholders for Razorpay (COD, UPI, Card). Mobile-first responsive design. Contact phone number: +91-8429145707.",
+  "architectural_notes": [
+    "Brand: Deep Navy (#1F2A56), Medical Orange (#FF5A1F), Royal Purple (#5B3DF5); modern sans-serif, rounded CTAs, generous white space",
+    "Blob storage used for prescription images and blog images",
+    "20 medicine categories with 3-5 sample products each; sample testimonials and blog posts pre-populated",
+    "Contact phone number updated to +91-8429145707 (replaces placeholder +91-9999999999)"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-the-premium-medanta-care-homepage-with-all-required-sections-in-order-1-hero-section-full-width-banner-with-headline-medicines-delivered-to-your-door-in-30-60-minutes-subheading-fast-affordable-trusted-serving-all-of-varanasi-two-cta-buttons-order-now-in-orange-upload-prescription-in-purple-outline-trust-badges-100-genuine-licensed-pharmacy-best-prices-and-a-pharmacy-delivery-themed-hero-illustration-2-why-choose-medanta-care-4-icon-grid-with-30-60-min-express-delivery-competitive-pricing-in-varanasi-easy-prescription-upload-100-authentic-medicines-3-shop-by-category-20-category-cards-in-a-responsive-grid-with-hover-animation-4-price-advantage-headline-better-prices-than-local-pharmacies-transparent-pricing-highlights-no-hidden-charges-bulk-purchase-discounts-monthly-subscription-plans-5-how-it-works-3-step-circular-icon-layout-search-upload-verify-confirm-delivered-in-30-60-min-6-service-areas-varanasi-localities-lanka-sigra-bhelupur-cantt-assi-mahmoorganj-godowlia-7-trust-compliance-navy-background-section-with-licensed-pharmacy-registered-pharmacist-verification-secure-payments-data-privacy-8-customer-testimonial-slider-modern-auto-sliding-testimonials-9-dark-navy-footer-quick-links-shop-upload-prescription-about-us-contact-terms-privacy-contact-info-medanta-care-varanasi-up-91-9999999999-whatsapp-ordering-available-social-icons-instagram-facebook-whatsapp",
+      "title": "Build the premium MEDANTA CARE homepage with all required sections in order: (1) Hero section — full-width banner with headline 'Medicines Delivered to Your Door in 30–60 Minutes', subheading 'Fast. Affordable. Trusted. Serving All of Varanasi.', two CTA buttons ('Order Now' in orange, 'Upload Prescription' in purple outline), trust badges (100% Genuine | Licensed Pharmacy | Best Prices), and a pharmacy/delivery-themed hero illustration; (2) Why Choose MEDANTA CARE — 4-icon grid with ⚡ 30–60 Min Express Delivery, 💰 Competitive Pricing in Varanasi, 🧾 Easy Prescription Upload, 🏥 100% Authentic Medicines; (3) Shop by Category — 20 category cards in a responsive grid with hover animation; (4) Price Advantage — headline 'Better Prices Than Local Pharmacies', transparent pricing highlights, No Hidden Charges, Bulk Purchase Discounts, Monthly Subscription Plans; (5) How It Works — 3-step circular icon layout: Search/Upload → Verify & Confirm → Delivered in 30–60 Min; (6) Service Areas — Varanasi localities: Lanka, Sigra, Bhelupur, Cantt, Assi, Mahmoorganj, Godowlia; (7) Trust & Compliance — navy background section with Licensed Pharmacy, Registered Pharmacist Verification, Secure Payments, Data Privacy; (8) Customer Testimonial Slider — modern auto-sliding testimonials; (9) Dark Navy Footer — quick links (Shop, Upload Prescription, About Us, Contact, Terms, Privacy), contact info (MEDANTA CARE, Varanasi UP, +91-9999999999, WhatsApp Ordering Available), social icons (Instagram, Facebook, WhatsApp).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-product-catalog-page-with-category-sidebar-filter-and-search-bar-show-product-cards-with-name-price-category-badge-and-add-to-cart-button-build-a-category-page-that-shows-products-filtered-by-a-selected-category-build-individual-product-detail-pages-with-full-description-price-prescription-requirement-notice-and-add-to-cart-upload-prescription-buttons",
+      "title": "Build the product catalog page with category sidebar/filter and search bar. Show product cards with name, price, category badge, and 'Add to Cart' button. Build a category page that shows products filtered by a selected category. Build individual product detail pages with full description, price, prescription requirement notice, and 'Add to Cart' / 'Upload Prescription' buttons.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-shopping-cart-and-multi-step-checkout-flow-cart-shows-selected-items-quantities-and-total-checkout-steps-1-delivery-address-select-saved-address-or-enter-new-2-prescription-upload-upload-image-if-any-item-requires-prescription-with-image-preview-3-payment-method-visual-selector-with-cod-upi-and-card-options-as-ui-placeholders-no-real-payment-processing-labelled-razorpay-integration-coming-soon-4-order-confirmation-screen-showing-order-id-and-estimated-delivery-time-of-30-60-minutes",
+      "title": "Build a shopping cart and multi-step checkout flow. Cart shows selected items, quantities, and total. Checkout steps: (1) Delivery Address — select saved address or enter new; (2) Prescription Upload — upload image if any item requires prescription, with image preview; (3) Payment Method — visual selector with COD, UPI, and Card options as UI placeholders (no real payment processing, labelled 'Razorpay integration coming soon'); (4) Order Confirmation screen showing order ID and estimated delivery time of 30–60 minutes.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-login-and-register-pages-integrated-with-internet-identity-after-login-redirect-customers-to-the-homepage-or-previously-intended-page-after-registration-prompt-the-user-to-complete-their-profile-name-phone-number",
+      "title": "Build Login and Register pages integrated with Internet Identity. After login, redirect customers to the homepage or previously intended page. After registration, prompt the user to complete their profile (name, phone number).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-customer-dashboard-with-three-tabs-1-order-history-list-of-past-orders-with-status-badge-and-order-details-expandable-view-2-saved-addresses-list-of-saved-addresses-with-add-edit-delete-actions-3-prescriptions-list-of-uploaded-prescription-images-with-order-reference-and-upload-date",
+      "title": "Build a Customer Dashboard with three tabs: (1) Order History — list of past orders with status badge and order details expandable view; (2) Saved Addresses — list of saved addresses with add/edit/delete actions; (3) Prescriptions — list of uploaded prescription images with order reference and upload date.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-order-tracking-page-accessible-to-customers-given-an-order-id-show-the-5-stage-progress-tracker-received-verified-packed-out-for-delivery-delivered-with-the-current-stage-highlighted-order-summary-and-estimated-delivery-info",
+      "title": "Build an Order Tracking page accessible to customers. Given an order ID, show the 5-stage progress tracker (Received → Verified → Packed → Out for Delivery → Delivered) with the current stage highlighted, order summary, and estimated delivery info.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-admin-dashboard-accessible-only-to-admin-role-users-with-three-sections-1-order-management-list-all-orders-with-status-customer-info-and-ability-to-update-order-status-through-the-5-stage-flow-prescription-images-viewable-inline-2-product-management-list-all-products-with-add-edit-and-delete-actions-and-a-form-to-create-edit-products-with-all-fields-3-blog-management-list-all-blog-posts-with-draft-published-status-and-a-form-to-create-edit-posts-with-title-content-category-cover-image-upload-and-publish-toggle",
+      "title": "Build an Admin Dashboard accessible only to admin-role users, with three sections: (1) Order Management — list all orders with status, customer info, and ability to update order status through the 5-stage flow; prescription images viewable inline; (2) Product Management — list all products with add, edit, and delete actions, and a form to create/edit products with all fields; (3) Blog Management — list all blog posts with draft/published status, and a form to create/edit posts with title, content, category, cover image upload, and publish toggle.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-blog-listing-page-showing-all-published-blog-posts-as-cards-with-cover-image-title-category-badge-and-excerpt-support-category-filter-tabs-build-individual-blog-post-pages-with-full-content-cover-image-author-date-and-category",
+      "title": "Build a Blog listing page showing all published blog posts as cards with cover image, title, category badge, and excerpt. Support category filter tabs. Build individual Blog Post pages with full content, cover image, author, date, and category.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-floating-scripted-faq-chatbot-widget-the-widget-appears-as-a-chat-bubble-icon-fixed-to-the-bottom-right-of-the-screen-distinct-from-whatsapp-button-on-click-it-opens-a-chat-style-panel-with-pre-set-questions-e-g-how-fast-is-delivery-how-do-i-upload-a-prescription-what-payment-methods-do-you-accept-which-areas-do-you-serve-and-corresponding-scripted-answers-no-llm-or-real-time-backend-required",
+      "title": "Build a floating Scripted FAQ Chatbot widget. The widget appears as a chat bubble icon fixed to the bottom-right of the screen (distinct from WhatsApp button). On click, it opens a chat-style panel with pre-set questions (e.g., 'How fast is delivery?', 'How do I upload a prescription?', 'What payment methods do you accept?', 'Which areas do you serve?') and corresponding scripted answers. No LLM or real-time backend required.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-floating-whatsapp-button-fixed-to-the-bottom-right-corner-above-the-chatbot-icon-clicking-it-opens-a-new-tab-to-https-wa-me-919999999999-text-hi-20medanta-20care-2c-20i-20want-20to-20place-20an-20order-with-a-pre-filled-message",
+      "title": "Add a floating WhatsApp button fixed to the bottom-right corner (above the chatbot icon). Clicking it opens a new tab to 'https://wa.me/919999999999?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order' with a pre-filled message.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-medanta-care-visual-design-system-consistently-across-the-entire-application-primary-colors-deep-navy-blue-1f2a56-bright-medical-orange-ff5a1f-royal-purple-5b3df5-secondary-clean-white-backgrounds-and-light-grey-dividers-large-bold-headlines-with-modern-sans-serif-typography-generous-white-space-rounded-buttons-with-high-contrast-ctas-mobile-first-responsive-layout-using-tailwind-css-configure-the-tailwind-theme-with-these-custom-colors",
+      "title": "Apply the MEDANTA CARE visual design system consistently across the entire application: Primary colors Deep Navy Blue (#1F2A56), Bright Medical Orange (#FF5A1F), Royal Purple (#5B3DF5); secondary clean white backgrounds and light grey dividers; large bold headlines with modern sans-serif typography; generous white space; rounded buttons with high-contrast CTAs; mobile-first responsive layout using Tailwind CSS. Configure the Tailwind theme with these custom colors.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-persistent-top-navigation-bar-across-all-pages-with-medanta-care-logo-brand-name-a-search-bar-for-products-navigation-links-shop-blog-about-contact-login-register-or-user-avatar-dropdown-when-authenticated-and-cart-icon-with-item-count-badge",
+      "title": "Add a persistent top navigation bar across all pages with: MEDANTA CARE logo/brand name, a search bar for products, navigation links (Shop, Blog, About, Contact), Login/Register or User avatar dropdown when authenticated, and Cart icon with item count badge.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-in-the-footer-component-frontend-src-components-footer-tsx-update-the-contact-phone-number-displayed-in-the-footer-contact-section-to-91-8429145707-this-corresponds-to-the-element-at-xpath-html-1-body-1-div-1-div-1-footer-1-div-1-div-1-div-4-div-1-div-2-div-1-p-1-also-update-any-tel-href-link-associated-with-this-phone-number-to-tel-918429145707",
+      "title": "In the Footer component (frontend/src/components/Footer.tsx), update the contact phone number displayed in the footer contact section to '+91-8429145707'. This corresponds to the element at XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/p[1]. Also update any tel: href link associated with this phone number to 'tel:+918429145707'.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Role-based user authentication and authorization (admin, customer)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Product catalog management with 20 medicine categories and CRUD operations",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Order management system with prescription upload support and blob storage",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Order tracking with 5-stage status flow (received, verified, packed, out for delivery, delivered)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "User profile management with saved addresses, order history, prescription history",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Blog management system with categories and publish/draft states",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Search functionality for products",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Premium homepage with Hero, Why Choose Us, Shop by Category, Price Advantage, How It Works, Service Areas, Trust & Compliance, Testimonial Slider, and Dark Navy Footer",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Product catalog pages, category pages, and product detail pages",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Cart and checkout flow with COD/UPI/Card UI placeholders (Razorpay-ready)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Prescription upload module with image preview",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "User dashboard: orders, addresses, prescriptions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Admin dashboard: order management, product management, blog management",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Blog listing page with category filtering and individual blog post pages",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Scripted FAQ chatbot widget (rule-based)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Floating WhatsApp button with wa.me deep link (+91-9999999999 placeholder)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Mobile-first responsive design throughout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-18",
+      "summary": "Implement a role-based user authentication and authorization system with two roles: 'admin' and 'customer'. Users register and log in via Internet Identity. Store user profiles with role, name, email, and phone number. Admin accounts can be assigned manually.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Implement a product catalog backend with full CRUD operations. Support 20 medicine categories: Anti Cancer, Anti Fungal, Anti Viral, Arthritis, Blood Disorders, General, Heart Disease, Hepatitis, HIV/AIDS, Infertility, Nephrology, Osteoporosis, Skin Disease, Transplant, Vaccine, Weight Loss, Diabetes Care, Cardiac Care, OTC Products, Surgical & Medical Devices. Each product has: name, description, price, category, requiresPrescription flag, stockStatus, and imageUrl. Populate 3–5 sample medicines per category.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Implement product search functionality. Customers can search products by name or description keyword. Return matching products across all categories.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Implement an order management system. Customers can place orders containing one or more products with quantities, a delivery address, and an optional prescription image (stored as blob). Orders have a 5-stage status flow: received → verified → packed → out_for_delivery → delivered. Store order timestamp, customer ID, total amount, payment method (cod, upi, card), and prescription reference if applicable.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Implement user profile management. Customers can save multiple delivery addresses (label, full address, city, pincode), view order history, and view prescription upload history. Customers can add, update, and delete saved addresses.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "Implement a blog management system. Blog posts have: title, content (rich text as plain string), category, author, coverImageUrl, status (draft or published), and createdAt timestamp. Admin can create, edit, delete, and publish/unpublish posts. Anyone can read published posts. Support filtering by category. Seed 2–3 sample blog posts.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Implement blob storage for prescription images and blog cover images. Prescriptions are uploaded by customers during checkout; blog images are uploaded by admin during blog post creation. Store blobs with an ID and return a retrieval endpoint.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "MEDANTA CARE",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

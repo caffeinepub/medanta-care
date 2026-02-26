@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* MEDANTA CARE Brand Colors in OKLCH */
+    --medanta-navy: 0.22 0.08 264;
+    --medanta-orange: 0.62 0.22 38;
+    --medanta-purple: 0.45 0.22 280;
+    --medanta-light-grey: 0.96 0 0;
+    --medanta-yellow: 0.88 0.18 90;
+
+    /* Semantic tokens - Light Mode */
+    --background: 0.99 0 0;
+    --foreground: 0.15 0.02 264;
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.02 264;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.02 264;
+    --primary: 0.22 0.08 264;
+    --primary-foreground: 0.99 0 0;
+    --secondary: 0.96 0.01 264;
+    --secondary-foreground: 0.22 0.08 264;
+    --muted: 0.96 0.005 264;
+    --muted-foreground: 0.5 0.02 264;
+    --accent: 0.62 0.22 38;
+    --accent-foreground: 0.99 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.9 0.01 264;
+    --input: 0.9 0.01 264;
+    --ring: 0.62 0.22 38;
+    --chart-1: 0.62 0.22 38;
+    --chart-2: 0.45 0.22 280;
+    --chart-3: 0.22 0.08 264;
+    --chart-4: 0.88 0.18 90;
+    --chart-5: 0.6 0.15 160;
+    --sidebar: 0.22 0.08 264;
+    --sidebar-foreground: 0.99 0 0;
+    --sidebar-primary: 0.62 0.22 38;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.28 0.08 264;
+    --sidebar-accent-foreground: 0.99 0 0;
+    --sidebar-border: 0.3 0.06 264;
+    --sidebar-ring: 0.62 0.22 38;
+  }
+
+  .dark {
+    --background: 0.12 0.04 264;
+    --foreground: 0.97 0 0;
+    --card: 0.18 0.05 264;
+    --card-foreground: 0.97 0 0;
+    --popover: 0.18 0.05 264;
+    --popover-foreground: 0.97 0 0;
+    --primary: 0.62 0.22 38;
+    --primary-foreground: 0.99 0 0;
+    --secondary: 0.25 0.06 264;
+    --secondary-foreground: 0.97 0 0;
+    --muted: 0.25 0.06 264;
+    --muted-foreground: 0.65 0.02 264;
+    --accent: 0.62 0.22 38;
+    --accent-foreground: 0.99 0 0;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.985 0 0;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.62 0.22 38;
+    --chart-1: 0.62 0.22 38;
+    --chart-2: 0.55 0.22 280;
+    --chart-3: 0.88 0.18 90;
+    --chart-4: 0.6 0.15 160;
+    --chart-5: 0.7 0.15 200;
+    --sidebar: 0.15 0.05 264;
+    --sidebar-foreground: 0.97 0 0;
+    --sidebar-primary: 0.62 0.22 38;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.22 0.06 264;
+    --sidebar-accent-foreground: 0.97 0 0;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.62 0.22 38;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient-orange {
+    background: linear-gradient(135deg, oklch(0.62 0.22 38), oklch(0.7 0.2 50));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-navy-gradient {
+    background: linear-gradient(135deg, oklch(0.22 0.08 264) 0%, oklch(0.18 0.07 270) 100%);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .btn-orange {
+    @apply bg-medanta-orange text-white font-semibold rounded-full px-6 py-3 hover:opacity-90 transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-purple-outline {
+    @apply border-2 border-medanta-purple text-medanta-purple font-semibold rounded-full px-6 py-3 hover:bg-medanta-purple hover:text-white transition-all duration-200;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+}

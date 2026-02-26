@@ -1,0 +1,25 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-in-the-footer-component-frontend-src-components-footer-tsx-update-the-contact-phone-number-displayed-in-the-footer-contact-section-to-91-8429145707-this-corresponds-to-the-element-at-xpath-html-1-body-1-div-1-div-1-footer-1-div-1-div-1-div-4-div-1-div-2-div-1-p-1-also-update-any-tel-href-link-associated-with-this-phone-number-to-tel-918429145707",
+      "featureTitle": "In the Footer component (frontend/src/components/Footer.tsx), update the contact phone number displayed in the footer contact section to '+91-8429145707'. This corresponds to the element at XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/p[1]. Also update any tel: href link associated with this phone number to 'tel:+918429145707'.",
+      "files": [
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-20"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
