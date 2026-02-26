@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-in-the-footer-component-frontend-src-components-footer-tsx-update-the-contact-phone-number-displayed-in-the-footer-contact-section-to-91-8429145707-this-corresponds-to-the-element-at-xpath-html-1-body-1-div-1-div-1-footer-1-div-1-div-1-div-4-div-1-div-2-div-1-p-1-also-update-any-tel-href-link-associated-with-this-phone-number-to-tel-918429145707",
-      "featureTitle": "In the Footer component (frontend/src/components/Footer.tsx), update the contact phone number displayed in the footer contact section to '+91-8429145707'. This corresponds to the element at XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/p[1]. Also update any tel: href link associated with this phone number to 'tel:+918429145707'.",
+      "featureId": "feature-in-the-whatsappbutton-component-frontend-src-components-whatsappbutton-tsx-update-the-href-link-url-to-https-wa-me-918429145707-text-hi-20medanta-20care-2c-20i-20want-20to-20place-20an-20order-so-that-clicking-the-floating-whatsapp-svg-icon-identified-at-xpath-html-1-body-1-div-1-div-1-a-1-svg-1-redirects-to-the-correct-whatsapp-number-91-8429145707",
+      "featureTitle": "In the WhatsAppButton component (frontend/src/components/WhatsAppButton.tsx), update the href/link URL to 'https://wa.me/918429145707?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order' so that clicking the floating WhatsApp SVG icon (identified at XPath /html[1]/body[1]/div[1]/div[1]/a[1]/svg[1]) redirects to the correct WhatsApp number +91 8429145707.",
       "files": [
-        "frontend/src/components/Footer.tsx"
+        "frontend/src/components/WhatsAppButton.tsx"
       ],
       "components": [
         "authorization@4.0.0",
@@ -17,7 +17,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-20"
+        "REQ-21"
       ],
       "confidence": "high"
     }

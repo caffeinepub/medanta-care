@@ -1,12 +1,13 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
-  "summary": "MEDANTA CARE — a full-stack premium e-pharmacy platform for Varanasi with rapid 30–60 minute medicine delivery. Features role-based auth (admin/customer), 20 medicine categories, order management with prescription uploads, order tracking, user profiles, blog system, scripted FAQ chatbot, floating WhatsApp button, and a premium homepage with Deep Navy/Orange/Purple brand identity. Payment UI placeholders for Razorpay (COD, UPI, Card). Mobile-first responsive design. Contact phone number: +91-8429145707.",
+  "projectStateVersion": 7,
+  "summary": "MEDANTA CARE — a full-stack premium e-pharmacy platform for Varanasi with rapid 30–60 minute medicine delivery. Features role-based auth (admin/customer), 20 medicine categories, order management with prescription uploads, order tracking, user profiles, blog system, scripted FAQ chatbot, floating WhatsApp button, and a premium homepage with Deep Navy/Orange/Purple brand identity. Payment UI placeholders for Razorpay (COD, UPI, Card). Mobile-first responsive design. Contact phone number: +91-8429145707. WhatsApp button links to +91-8429145707.",
   "architectural_notes": [
     "Brand: Deep Navy (#1F2A56), Medical Orange (#FF5A1F), Royal Purple (#5B3DF5); modern sans-serif, rounded CTAs, generous white space",
     "Blob storage used for prescription images and blog images",
     "20 medicine categories with 3-5 sample products each; sample testimonials and blog posts pre-populated",
-    "Contact phone number updated to +91-8429145707 (replaces placeholder +91-9999999999)"
+    "Contact phone number updated to +91-8429145707 (replaces placeholder +91-9999999999)",
+    "WhatsApp floating button links to wa.me/918429145707 with pre-filled order message"
   ],
   "known_issues": [],
   "isFixRequest": false,
@@ -114,6 +115,14 @@
         "REQ-20"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-in-the-whatsappbutton-component-frontend-src-components-whatsappbutton-tsx-update-the-href-link-url-to-https-wa-me-918429145707-text-hi-20medanta-20care-2c-20i-20want-20to-20place-20an-20order-so-that-clicking-the-floating-whatsapp-svg-icon-identified-at-xpath-html-1-body-1-div-1-div-1-a-1-svg-1-redirects-to-the-correct-whatsapp-number-91-8429145707",
+      "title": "In the WhatsAppButton component (frontend/src/components/WhatsAppButton.tsx), update the href/link URL to 'https://wa.me/918429145707?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order' so that clicking the floating WhatsApp SVG icon (identified at XPath /html[1]/body[1]/div[1]/div[1]/a[1]/svg[1]) redirects to the correct WhatsApp number +91 8429145707.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -204,12 +213,6 @@
     {
       "id": "AR-15",
       "summary": "Scripted FAQ chatbot widget (rule-based)",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-16",
-      "summary": "Floating WhatsApp button with wa.me deep link (+91-9999999999 placeholder)",
       "reqIds": [],
       "status": "pending"
     },

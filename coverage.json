@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-25T23:55:19.011Z",
+  "generatedAt": "2026-02-26T00:38:10.860Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,25 +11,24 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-20",
-        "summary": "In the Footer component (frontend/src/components/Footer.tsx), update the contact phone number displayed in the footer contact section to '+91-8429145707'. This corresponds to the element at XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/p[1]. Also update any tel: href link associated with this phone number to 'tel:+918429145707'.",
+        "id": "REQ-21",
+        "summary": "In the WhatsAppButton component (frontend/src/components/WhatsAppButton.tsx), update the href/link URL to 'https://wa.me/918429145707?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order' so that clicking the floating WhatsApp SVG icon (identified at XPath /html[1]/body[1]/div[1]/div[1]/a[1]/svg[1]) redirects to the correct WhatsApp number +91 8429145707.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Footer.tsx"
+          "frontend/src/components/WhatsAppButton.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/Footer.tsx"
+          "frontend/src/components/WhatsAppButton.tsx"
         ]
       }
     ]
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/WhatsAppButton.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

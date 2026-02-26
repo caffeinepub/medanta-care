@@ -1,34 +1,36 @@
 {
   "kind": "build_request",
-  "title": "Update phone number to 8429145707 in footer",
+  "title": "Update floating WhatsApp button redirect to +91 8429145707",
+  "projectName": "MEDANTA CARE",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-20",
-      "text": "In the Footer component (frontend/src/components/Footer.tsx), update the contact phone number displayed in the footer contact section to '+91-8429145707'. This corresponds to the element at XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/p[1]. Also update any tel: href link associated with this phone number to 'tel:+918429145707'.",
+      "id": "REQ-21",
+      "text": "In the WhatsAppButton component (frontend/src/components/WhatsAppButton.tsx), update the href/link URL to 'https://wa.me/918429145707?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order' so that clicking the floating WhatsApp SVG icon (identified at XPath /html[1]/body[1]/div[1]/div[1]/a[1]/svg[1]) redirects to the correct WhatsApp number +91 8429145707.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-4"
+          "msg-1"
         ],
         "quotes": [
-          "change phone number to 8429145707"
+          "redirect to whatsapp number +91 8429145707"
         ]
       },
       "acceptanceCriteria": [
-        "The footer contact section displays '+91-8429145707' as the phone number.",
-        "Any tel: anchor href in the footer is updated to 'tel:+918429145707'.",
-        "No other phone number instances elsewhere in the footer are left as the old number."
+        "The floating WhatsApp button anchor tag's href is exactly 'https://wa.me/918429145707?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order'",
+        "Clicking the WhatsApp icon opens a new tab pointing to wa.me/918429145707",
+        "No other WhatsApp link on the page still uses the old number 919999999999"
       ]
     }
   ],
   "constraints": [
-    "Only change the phone number in the footer contact section as identified by the provided XPath. Do not alter any other footer content."
+    "Only update the WhatsApp redirect URL in WhatsAppButton.tsx — do not modify any other component or page",
+    "Do not alter the visual appearance or positioning of the floating WhatsApp button"
   ],
   "nonGoals": [
-    "Updating the WhatsApp button wa.me link phone number.",
-    "Updating phone numbers on any page other than the footer.",
-    "Any backend changes."
+    "Changing any other phone number references on the site",
+    "Modifying the Footer phone number (already updated to +91-8429145707)",
+    "Any backend changes"
   ],
   "imageRequirements": {
     "required": [],

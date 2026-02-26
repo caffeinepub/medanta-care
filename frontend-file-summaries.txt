@@ -13,5 +13,6 @@
   "frontend/src/pages/BlogListingPage.tsx": "Public blog listing page showing published posts in a grid with category filter tabs; fetches from backend and shows loading skeletons.",
   "frontend/src/pages/BlogPostPage.tsx": "Individual blog post page with cover image, metadata, full content, and social share buttons for Facebook and WhatsApp.",
   "frontend/src/pages/StaticPage.tsx": "Reusable static content page component for About, Contact, Terms, Privacy, Refund, and Shipping pages with pre-written content sections.",
-  "frontend/src/components/Footer.tsx": "Footer component with brand info, quick links, legal links, and contact section; phone number updated to +91-8429145707 with a clickable tel: link (tel:+918429145707)."
+  "frontend/src/components/Footer.tsx": "Footer component with brand info, quick links, legal links, and contact section; phone number updated to +91-8429145707 with a clickable tel: link (tel:+918429145707).",
+  "frontend/src/components/WhatsAppButton.tsx": "Floating WhatsApp button fixed to the bottom-right corner that opens a WhatsApp chat with +91 8429145707 and a pre-filled order message in a new tab."
 }

@@ -1,14 +1,14 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-25T23:55:19.008Z",
-  "summary": "The diff shows that Footer.tsx was updated with the new phone number +91-8429145707 and the tel: link tel:+918429145707, which directly satisfies REQ-20. The file summary confirms this explicitly. The WhatsApp wa.me link was correctly left unchanged at 919999999999. All acceptance criteria appear to be met.",
+  "generatedAt": "2026-02-26T00:38:10.857Z",
+  "summary": "The diff correctly updates the WhatsAppButton.tsx component with the exact href URL specified in REQ-21. The floating button now links to 'https://wa.me/918429145707?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order', opens in a new tab, and no other files besides WhatsAppButton.tsx (and metadata files) were modified. All acceptance criteria for REQ-21 appear to be met.",
   "missing_requirements": [],
   "hallucinated_features": [],
-  "confidence": 0.95,
+  "confidence": 0.97,
   "changed_files": [
     "frontend-file-summaries.txt",
-    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/WhatsAppButton.tsx",
     "project_state.json"
   ]
 }

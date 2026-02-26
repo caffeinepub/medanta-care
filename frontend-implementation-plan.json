@@ -1,21 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update phone number to 8429145707 in footer",
+  "title": "Update floating WhatsApp button redirect to +91 8429145707",
   "requirements": [
     {
-      "id": "REQ-20",
-      "summary": "Update the footer contact phone number to '+91-8429145707' and corresponding tel: href link",
+      "id": "REQ-21",
+      "summary": "Update the WhatsApp button component href to redirect to the correct phone number +91 8429145707",
       "acceptanceCriteria": [
-        "The footer contact section displays '+91-8429145707' as the phone number.",
-        "Any tel: anchor href in the footer is updated to 'tel:+918429145707'.",
-        "No other phone number instances elsewhere in the footer are left as the old number."
+        "The floating WhatsApp button anchor tag's href is exactly 'https://wa.me/918429145707?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order'",
+        "Clicking the WhatsApp icon opens a new tab pointing to wa.me/918429145707",
+        "No other WhatsApp link on the page still uses the old number 919999999999"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Footer.tsx",
+          "path": "frontend/src/components/WhatsAppButton.tsx",
           "operation": "modify",
-          "description": "Locate the phone number display in the footer contact section (corresponding to XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[1]/p[1]) and update the displayed phone number text to '+91-8429145707'. Also update any associated tel: anchor href attribute to 'tel:+918429145707' to enable click-to-call functionality. Ensure no other phone number references in the footer are left with the old value."
+          "description": "Update the href attribute in the anchor tag to 'https://wa.me/918429145707?text=Hi%20MEDANTA%20CARE%2C%20I%20want%20to%20place%20an%20order'. Change the phone number from any existing value to 918429145707 while preserving the pre-filled message text, SVG icon, and all styling/positioning of the floating button."
         }
       ]
     }
